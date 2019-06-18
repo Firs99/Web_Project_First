@@ -89,3 +89,35 @@ padding-top: 36%;
     margin-bottom: 20px;
 }
 /* end about */
+
+/* Popular topics */
+.grid__container{
+    display: grid;
+    grid-template-rows: repeat(2, 320px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.grid__item{
+    background: #000;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+.grid__item img{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: brightness(50%);
+}
+.item__title{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 29px;
+    color: #fff;
+}
+/* end topics */
